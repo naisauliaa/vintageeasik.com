@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunitas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- link ke lembar style -->
+    <style>
+        /* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9e8d6;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+}
+
+.community-container {
+  background-color: #fff;
+  padding: 2em;
+  margin-bottom: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 800px;
+}
+
+.community-container h2 {
+  margin-top: 0;
+}
+
+.community-feed {
+  padding: 1em;
+}
+
+.community-sidebar {
+  padding: 1em;
+  border-left: 1px solid #ddd;
+}
+
+.community-sidebar h3 {
+  margin-top: 0;
+}
+
+.community-sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.community-sidebar li {
+  margin-bottom: 10px;
+}
+
+.community-sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+.community-sidebar a:hover {
+  color: #444;
+}
+
+.community-create-post {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+}
+
+.community-create-post h3 {
+  margin-top: 0;
+}
+
+.community-create-post label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.community-create-post input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.community-create-post textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+}
+
+.community-create-post button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.community-create-post button:hover {
+  background-color: #444;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .community-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .community-container {
+    padding: 1em;
+  }
+  .community-sidebar {
+    padding: 0.5em;
+  }
+  .community-create-post {
+    padding: 0.5em;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1 align="center"> Komunitas</h1>
+    </header>
+    <main>
+        <section class="community-container">
+            <h2 align="center"> Bergabung dengan Komunitas Kami!</h2>
+            <div class="community-feed">
+                <!-- feed komunitas ditampilin di sini -->
+            </div>
+            <div class="community-sidebar">
+                <h3>Kategori Komunitas</h3>
+                <ul>
+                    <li><a href="#">Uang Kuno</a></li>
+                    <li><a href="#">barang Antik</a></li>
+                    <li><a href="#">Filateli</a></li>
+                </ul>
+                <h3> Kontributor Teratas </h3>
+                <ul>
+                    <li><a href="#">User 1</a></li>
+                    <li><a href="#">User 2</a></li>
+                    <li><a href="#">User 3</a></li>
+                </ul>
+            </div>
+            <div class="community-create-post">
+                <h3>Buat Postingan Baru</h3>
+                <form>
+                    <label for="title">Judul:</label>
+                    <input type="text" id="title" name="title">
+                    <label for="content">Isi:</label>
+                    <textarea id="content" name="content"></textarea>
+                    <button id="submit-btn">Kirim Postingan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- link to your script file -->
+</body>
+</html>
